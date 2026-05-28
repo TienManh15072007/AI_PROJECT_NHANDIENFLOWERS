@@ -39,7 +39,7 @@ def download_and_load_model():
     
     if not os.path.exists(model_path):
         # Giữ nguyên cấu trúc tải từ GitHub, chỉ thay đổi tên file lưu trữ tương ứng
-        url = "https://github.com/TienManh15072007/AI_PROJECT_NHANDIENKHUONMAT/releases/download/v1.0/face_model.h5"
+        url = "https://github.com/TienManh15072007/AI_PROJECT_NHANDIENFLOWERS/releases/download/v1.0/flower_model.h5"
         try:
             urllib.request.urlretrieve(url, model_path)
         except Exception as e:
