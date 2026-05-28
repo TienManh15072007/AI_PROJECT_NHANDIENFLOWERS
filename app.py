@@ -93,14 +93,9 @@ if app_mode == "Dự đoán qua Webcam/Ảnh":
                     confidence = np.max(preds) * 100
                     
                     # Giữ nguyên đúng tuyển tập 22 nhãn lớp, thay bằng 22 loại hoa đặc trưng
+                   
                     class_names = [
-                        "Hoa Mai Vàng", "Hoa Đào", "Hoa Sen", "Hoa Súng", 
-                        "Hoa Hồng", "Hoa Cúc", "Hoa Hướng Dương", 
-                        "Hoa Lan", "Hoa Huệ", "Hoa Cẩm Tú Cầu", 
-                        "Hoa Mười Giờ", "Hoa Phượng Ngạn", "Hoa Bằng Lăng", 
-                        "Hoa Sữa", "Hoa Nhài", "Hoa Ly", 
-                        "Hoa Đồng Tiền", "Hoa Đỗ Quyên", "Hoa Dâm Bụt", "Hoa Quỳnh", 
-                        "Hoa Thạch Thảo", "Hoa Loa Kèn"
+                        "Hoa Cúc", "Hoa Hồng", "Hoa Hướng Dương", "Hoa Ly", "Hoa Sen"
                     ]
                     
                     predicted_name = class_names[digit]
